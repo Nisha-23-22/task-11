@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Thala 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="logo">Thala 7.</a>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="product.html">Brands</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="header-right">
+            <div class="search-box">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg>
+                <span class="cart-count">3</span>
+            </a>
+            <img class="avatar" src="images/avatar.png" alt="Profile picture">
+        </div>
+    </div>
+
+    <div class="cart">
+        <!-- Left container -->
+        <div class="cart-left">
+            <h1>Shopping Cart</h1>
+
+            <div class="cart-table">
+                <div class="cart-head">
+                    <span class="c-product">Product</span>
+                    <span class="c-qty">Quantity</span>
+                    <span class="c-price">Price</span>
+                    <span class="c-x"></span>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-product"><img src="images/shoe-1.png" alt=""><span>Seven By M.S.Dhoni W...</span></div>
+                    <div class="cart-qty"><span class="qty-btn">-</span><span>1</span><span class="qty-btn">+</span></div>
+                    <div class="cart-price">&#8377;1,334</div>
+                    <a href="#" class="remove" aria-label="Remove item">&#10005;</a>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-product"><img src="images/shoe-3.png" alt=""><span>Seven By M.S.Dhoni W...</span></div>
+                    <div class="cart-qty"><span class="qty-btn">-</span><span>1</span><span class="qty-btn">+</span></div>
+                    <div class="cart-price">&#8377;1,334</div>
+                    <a href="#" class="remove" aria-label="Remove item">&#10005;</a>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-product"><img src="images/shoe-4.png" alt=""><span>Seven By M.S.Dhoni W...</span></div>
+                    <div class="cart-qty"><span class="qty-btn">-</span><span>1</span><span class="qty-btn">+</span></div>
+                    <div class="cart-price">&#8377;1,334</div>
+                    <a href="#" class="remove" aria-label="Remove item">&#10005;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right container -->
+        <div class="cart-right">
+
+            <div class="summary-card">
+                <label class="small-label" for="coupon-cart">Enter Coupon Code</label>
+                <div class="coupon-row">
+                    <input type="text" id="coupon-cart" class="coupon-input" placeholder="Coupon code">
+                    <button type="button" class="apply-btn">Apply Coupon</button>
+                </div>
+
+                <div class="sum-row"><span>Sub Total</span><span>&#8377;4,002</span></div>
+                <div class="sum-row"><span>Taxes (if applicable)</span><span>&#8377;0</span></div>
+                <div class="sum-row"><span>Discount</span><span>&#8377;0</span></div>
+                <div class="sum-row total"><span>Total</span><span>&#8377;4,002</span></div>
+            </div>
+
+            <a href="payment.html" class="orange-btn wide">Pay Now &#8377;4,002</a>
+
+            <div class="badges">
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> 100% Secure</span>
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Encrypted Payments</span>
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> Trusted Checkout</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom container -->
+    <div class="bottom-container">
+        <a href="product.html" class="continue-link">&lsaquo; Continue Shopping</a>
+    </div>
+
+</body>
+</html>

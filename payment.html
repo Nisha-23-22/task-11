@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Thala 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="checkout">
+        <!-- Left container -->
+        <div class="pay-left">
+            <p class="checkout-title">Checkout</p>
+
+            <h3>Contact Details</h3>
+            <label class="small-label" for="email">Email ID</label>
+            <input type="email" id="email" class="field" placeholder="you@example.com">
+
+            <h3 class="payment-heading">Payment</h3>
+            <div class="payment-card">
+                <div class="methods">
+                    <input type="radio" name="method" id="m-card" checked>
+                    <label for="m-card" class="method"><span class="m-icon">&#9636;</span>Card</label>
+
+                    <input type="radio" name="method" id="m-crypto">
+                    <label for="m-crypto" class="method"><span class="m-icon">B</span>Crypto</label>
+
+                    <input type="radio" name="method" id="m-bank">
+                    <label for="m-bank" class="method"><span class="m-icon">&#8962;</span>Bank</label>
+
+                    <input type="radio" name="method" id="m-more">
+                    <label for="m-more" class="method more"><span class="m-icon">&#8942;</span></label>
+                </div>
+
+                <label class="small-label" for="card-number">Card Number</label>
+                <input type="text" id="card-number" class="field" placeholder="1234 1234 1234 1234" inputmode="numeric">
+
+                <div class="two-cols">
+                    <div class="col">
+                        <label class="small-label" for="expiry">Expiry</label>
+                        <input type="text" id="expiry" class="field" placeholder="MM / YY">
+                    </div>
+                    <div class="col">
+                        <label class="small-label" for="cvv">CVC</label>
+                        <input type="text" id="cvv" class="field" placeholder="CVC" inputmode="numeric">
+                    </div>
+                </div>
+
+                <div class="two-cols">
+                    <div class="col">
+                        <label class="small-label" for="country">Country</label>
+                        <select id="country" class="field">
+                            <option>India</option>
+                            <option>United States</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="small-label" for="zip">ZIP</label>
+                        <input type="text" id="zip" class="field" placeholder="ZIP code">
+                    </div>
+                </div>
+            </div>
+
+            <a href="cart.html" class="continue-link back-link">&lsaquo; Back to cart</a>
+        </div>
+
+        <!-- Right container -->
+        <div class="pay-right">
+            <h2 class="order-heading">Order Summary</h2>
+
+            <div class="summary-card">
+                <label class="small-label" for="coupon-pay">Enter Coupon Code</label>
+                <div class="coupon-row">
+                    <input type="text" id="coupon-pay" class="coupon-input" placeholder="Coupon code">
+                    <button type="button" class="apply-btn">Apply Coupon</button>
+                </div>
+
+                <div class="sum-row"><span>Sub Total</span><span>&#8377;4,002</span></div>
+                <div class="sum-row"><span>Taxes (if applicable)</span><span>&#8377;0</span></div>
+                <div class="sum-row"><span>Discount</span><span>&#8377;0</span></div>
+                <div class="sum-row total"><span>Total</span><span>&#8377;4,002</span></div>
+            </div>
+
+            <button type="button" class="orange-btn wide">Pay Now &#8377;4,002</button>
+
+            <div class="badges">
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> 100% Secure</span>
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Encrypted Payments</span>
+                <span class="badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> Trusted Checkout</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
